@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useRef, FC } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import { Dot, DotsWrapper, Slide, SliderTrack, SliderWrapper } from "./styled";
 
 const AUTOPLAY_INTERVAL = 5000;
@@ -34,6 +34,7 @@ export const Slider: FC<Props> = ({ slides, height, width }) => {
 
   useEffect(() => {
     resetAutoplay();
+
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };

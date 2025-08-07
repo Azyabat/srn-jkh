@@ -25,6 +25,7 @@ function shouldRemoveAndRender(key: string) {
 
 function renderToasts() {
   if (!root) {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     root = createRoot(document.getElementById(toastContainerId)!);
   }
 

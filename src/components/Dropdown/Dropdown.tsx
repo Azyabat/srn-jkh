@@ -2,13 +2,13 @@
 
 import { FC, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { Space } from "../Space";
 import { DropdownProps } from "./types";
 import {
   ChildrenWrapper,
   DropdownListWrapper,
   DropdownWrapper,
 } from "./styled";
-import { Space } from "../Space";
 
 const dropdownWidth = 271;
 const dropDownLayoutWrapper = "dropdown-layout-wrapper";
@@ -83,6 +83,7 @@ export const Dropdown: FC<DropdownProps> = ({
         >
           {actions}
         </DropdownListWrapper>,
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         document.getElementById(dropDownLayoutWrapper)!,
       )
     : null;

@@ -1,6 +1,7 @@
 "use client";
 
 import { FC, useEffect, useState } from "react";
+import { Space } from "../Space";
 import {
   BackgroundWrapper,
   ContentDrawer,
@@ -9,7 +10,6 @@ import {
   HeaderDrawer,
 } from "./styled";
 import { DrawerProps } from "./types";
-import { Space } from "../Space";
 
 export const Drawer: FC<DrawerProps> = ({
   children,

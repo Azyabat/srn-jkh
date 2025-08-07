@@ -1,9 +1,9 @@
 import { FC } from "react";
+import { Text } from "../Text";
+import { Space } from "../Space";
 import { VariantsColors, VariantsText } from "./consts";
 import { ToastWrapper } from "./styled";
 import { ToastProps } from "./types";
-import { Text } from "../Text";
-import { Space } from "../Space";
 
 export const Toast: FC<ToastProps> = ({ message, close, variant }) => {
   const preparedMessage =
