@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { ModalProps } from "components/Modal/Modal";
+import { ModalProps } from "../Modal/Modal";
 
 export type DrawerProps = ModalProps & {
   footer?: ReactNode;
